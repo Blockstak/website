@@ -1,15 +1,21 @@
 ---
+import Header from "../comps/Vue/Header.vue";
+import Footer from "../comps/Vue/Footer.vue";
+import Home from "../comps/Vue/Home.vue";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/src/styles/globals.css" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>BLOCKSTAK</title>
+  </head>
+  <body>
+    <Header />
+    <Home client:load />
+    <Footer />
+  </body>
 </html>

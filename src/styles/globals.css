@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+h1 {
+  @apply text-6xl font-bold leading-tight tracking-tighter;
+}
+h2 {
+  @apply text-4xl font-bold leading-tight tracking-tighter;
+}
+h3 {
+  @apply text-3xl font-bold leading-tight tracking-tighter;
+}
+h4 {
+  @apply text-2xl font-bold leading-tight tracking-tighter;
+}
+h5 {
+  @apply text-xl font-bold leading-tight tracking-tighter;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  @apply px-4;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-primary;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-black;
+}
+
+/* Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.p-datatable-wrapper {
+  @apply overflow-x-auto;
+}
+
+@media screen and (max-width: 960px) {
+  .p-datatable table {
+    width: auto !important;
+  }
+}
